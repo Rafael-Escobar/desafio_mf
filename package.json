@@ -1,0 +1,29 @@
+{
+  "name": "mf",
+  "version": "1.0.0",
+  "description": "API Mercafacil",
+  "main": "index.js",
+  "scripts": {
+    "knex:migrate": "knex  --knexfile knexfile.js migrate:latest",
+    "knex:migrate:macapa": "knex  --knexfile knexfile.macapa.js migrate:latest",
+    "knex:migrate:varejao": "knex  --knexfile knexfile.varejao.js migrate:latest",
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "Rafael Augusto Machado Escobar",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "celebrate": "^13.0.1",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.2.1",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.5",
+    "mysql": "^2.18.1",
+    "pg": "^8.3.3",
+    "sqlite3": "^5.0.0"
+  }
+}
