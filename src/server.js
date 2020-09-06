@@ -12,16 +12,4 @@ app.use(express.urlencoded({ extended: false }));
 app.use(routes);
 app.use(errors());
 
-// app.get('/',middleware.checkToken, (req,res)=>{
-
-
-
-//     res.send({
-//         message:'ok'
-//     });
-//     console.log(req.decoded)
-// });
-
-// app.post('/authenticate', userController.authenticate );
-
 app.listen(1234);
